@@ -26,6 +26,10 @@ namespace BasicInterfaces
             //that's what you ultimately need to do
             //read up on abstraction and inheritance again
 
+            //just switch the mebers of Mammal and Person around,
+            //we should be calling the Person ctor after instantiateing a Mammal,
+            //not the other way around, as is the case at the time of writing this text ...
+
             Person p = new Person("Jim");
             p.shout();
             Ant antie = new Ant("Antie", "'Crawling in a colony'");
