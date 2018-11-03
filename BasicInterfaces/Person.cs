@@ -10,11 +10,13 @@ public class Person
 		Name = n;
 	}
 
-	// public Person(string n, IUprightMammal humansLimbs)
-	// {
-	// 	Name = n;
-  //   HumansLimbs = humansLimbs;
-	// }
+	public Person(string n, IUprightMammal humansLimbs)
+	{
+		Name = n;
+    HumansLimbs = humansLimbs;
+		// HumansLimbs.ArmsCount = humansLimbs.ArmsCount;
+		// HumansLimbs.LegCount = humansLimbs.LegCount;
+	}
 	
 	public void shout()
 	{

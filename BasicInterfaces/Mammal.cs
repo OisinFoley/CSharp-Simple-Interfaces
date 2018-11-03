@@ -1,11 +1,18 @@
+using System;
 
-
-public abstract class Mammal
+public class Mammal: IUprightMammal
 {
-  int ArmsCount { get; set; }
-  int LegCount  { get; set; }
-  public abstract void WaveArms();
-  public abstract void KickLegs();
+  public int ArmsCount { get; set; }
+  public int LegCount  { get; set; }
+
+  public void WaveArms()
+  {
+    Console.WriteLine($"I'm a {this.GetType()} over here waving my arms!");
+  }
+  public void KickLegs()
+  {
+    Console.WriteLine($"I'm a {this.GetType()} over here kicking my legs!");
+  }
 
   public Mammal(int arms, int legs)
   {
